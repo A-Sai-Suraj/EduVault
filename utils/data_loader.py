@@ -1,7 +1,7 @@
 ﻿"""
 utils/data_loader.py
 --------------------
-Pure data-processing helpers for the Academic Resource Hub.
+Pure data-processing helpers for EduVault.
 No Streamlit imports — keeps concerns separated.
 """
 

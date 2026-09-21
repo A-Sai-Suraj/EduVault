@@ -1,7 +1,7 @@
 ﻿"""
 app.py
 ------
-Academic Resource Hub — Streamlit V1
+EduVault — Streamlit V1
 VNR Vignana Jyothi Institute of Engineering and Technology
 R25 | Computer Science and Engineering
 """
@@ -43,7 +43,7 @@ from utils.data_loader import (
 # Page config  (must be the very first Streamlit call)
 # ──────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Academic Resource Hub",
+    page_title="EduVault",
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -287,7 +287,7 @@ with st.sidebar:
         <div style="text-align:center; padding: 1rem 0 0.5rem;">
             <div style="font-size:2rem;">📚</div>
             <div style="font-size:1.05rem; font-weight:800; color:#e2e8f0; margin-top:4px;">
-                Academic Resource Hub
+                EduVault
             </div>
             <div style="font-size:0.72rem; color:#64748b; margin-top:2px; letter-spacing:0.05em;">
                 R25 · CSE · VNR VJIET
@@ -426,7 +426,7 @@ def page_home():
     st.markdown("""
         <div class="hero-box">
             <span class="college-tag">R25 · CSE · VNR VJIET</span>
-            <h1>Academic Resource Hub</h1>
+            <h1>EduVault</h1>
             <p><strong>Your CSE study resources, all in one place.</strong><br>
             Notes and study material organised semester-wise and subject-wise.</p>
         </div>

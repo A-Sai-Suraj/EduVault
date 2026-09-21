@@ -2,7 +2,7 @@ import json
 import streamlit as st
 with open("Resources.json","r") as f:
     data=json.load(f)
-st.title("# Academic Resource Hub")
+st.title("# EduVault")
 year=st.selectbox("Enter year",[1,2])
 sem=st.selectbox("Enter Semester",[1,2])
 if year==2:

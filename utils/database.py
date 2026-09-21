@@ -1,4 +1,4 @@
-"""SQLite persistence and CRUD helpers for Academic Resource Hub."""
+"""SQLite persistence and CRUD helpers for EduVault."""
 
 from __future__ import annotations
 
