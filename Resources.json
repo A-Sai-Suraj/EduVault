@@ -1,0 +1,503 @@
+{
+  "title": "CSE R25 — 4-Semester Study Resource Hub",
+  "regulation": "R25",
+  "branch": "Computer Science and Engineering",
+  "college": "VNR Vignana Jyothi Institute of Engineering and Technology",
+  "semesters": {
+    "semester_1": {
+      "name": "Semester 1",
+      "subjects": [
+        {
+          "code": "25BS1MT101",
+          "name": "Matrices and Calculus",
+          "resources": [
+            {
+              "unit": "Unit 1",
+              "file": "Unit 1 - Matrices.pdf",
+              "url": "https://drive.google.com/file/d/12jQh1d_AwNNF3odzwXttjClMV-9O6rIc/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 2",
+              "file": "Unit 2 - Eigen values & vectors.pdf",
+              "url": "https://drive.google.com/file/d/18_JyyjsduXscRUmopHhPdrBhX3el7lyM/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 3",
+              "file": "Unit 3 - Calculus.pdf",
+              "url": "https://drive.google.com/file/d/1MXDWHEOdGNS5XD3MLo2Ix2j22Dbo9GlQ/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 4",
+              "file": "Unit 4 - Multivariable Calculus.pdf",
+              "url": "https://drive.google.com/file/d/1n9o6Y1gxB5tSo0GYHiQmZauqRP7gXBTu/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 5",
+              "file": "Unit 5 - Multivariable Calculus.pdf",
+              "url": "https://drive.google.com/file/d/1xUE4zW3NwZZt7zC9GOqHrs-tlPRgJwGq/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25BS1CH101",
+          "name": "Chemistry for Engineers",
+          "resources": [
+            {
+              "unit": "Unit 1",
+              "file": "Water and its treatment.pdf",
+              "url": "https://drive.google.com/file/d/1fnkNJm65PRVn5utYZSMv3mfSgV2Lq84M/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 2",
+              "file": "EC UNIT 2.pdf",
+              "url": "https://drive.google.com/file/d/1Y5-l_7u10FUr7wVYHSmAv2dt1GS_5BhU/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 3",
+              "file": "Energy Sources & Battery Tech.pdf",
+              "url": "https://drive.google.com/file/d/1Mq8a_UpIxaFdlWMhrK_Vb379A1cVon54/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 4",
+              "file": "Polymeric Materials.pdf",
+              "url": "https://drive.google.com/file/d/1Muem3Uv-TRVhuiP2zwGfi4vBLWUcC1Pd/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 5",
+              "file": "UNIT-5 Notes.pdf",
+              "url": "https://drive.google.com/file/d/1JFuMAwDg_cleVmcot0lB0XQnYQe45-we/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25ES1EE101",
+          "name": "Basic Electrical Engineering",
+          "resources": [
+            {
+              "unit": "Unit 1",
+              "file": "DC Circuits.pdf",
+              "url": "https://drive.google.com/file/d/1mxJ89y_9LPa5U7-x-oqIghIz-Xy6oCDG/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 4",
+              "file": "Transformers.ppt",
+              "url": "https://drive.google.com/file/d/152MLIwfQshPYVCMejNE9-GbUvyk3GTVc/view?usp=drivesdk"
+            }
+          ],
+          "missing_units": ["Unit 2", "Unit 3", "Unit 5"]
+        },
+        {
+          "code": "25ES1CS101",
+          "name": "Programming for Problem Solving",
+          "resources": [
+            {
+              "type": "Book",
+              "file": "Let us C - Yashwant Kanetkar.pdf",
+              "url": "https://drive.google.com/file/d/1kL5fwACUOtmVq9roFSRKZKu08xeFl3tj/view?usp=drivesdk"
+            },
+            {
+              "type": "Book",
+              "file": "C Language.pdf",
+              "url": "https://drive.google.com/file/d/1-UjkHS54BHOt9rkjRHRsPD3w0ApC-CTj/view?usp=drivesdk"
+            },
+            {
+              "type": "Topic",
+              "file": "pointers.pdf",
+              "url": "https://drive.google.com/file/d/1-I_nz2nfT7Dn0zKrjni1WBsVkBxdCPNe/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25ES3ME101",
+          "name": "Engineering Drawing",
+          "resources": [
+            {
+              "type": "Book",
+              "file": "ED - Basant Agrawal.pdf",
+              "url": "https://drive.google.com/file/d/1tYvJNEmfeA8XQrTLm65Nryxr9AW3iwcQ/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25BS2CH101",
+          "name": "Engineering Chemistry Laboratory",
+          "resources": []
+        },
+        {
+          "code": "25ES2CS101",
+          "name": "Programming for Problem Solving Laboratory",
+          "resources": []
+        },
+        {
+          "code": "25ES2IT101",
+          "name": "IT Workshop",
+          "resources": []
+        },
+        {
+          "code": "25ES2EE101",
+          "name": "Basic Electrical Engineering Laboratory",
+          "resources": []
+        },
+        {
+          "code": "25MN6HS101",
+          "name": "Induction Programme",
+          "resources": []
+        }
+      ]
+    },
+
+    "semester_2": {
+      "name": "Semester 2",
+      "subjects": [
+        {
+          "code": "25BS1MT106",
+          "name": "Ordinary Differential Equations, Laplace Transforms and Vector Calculus",
+          "resources": [
+            {
+              "unit": "Unit 1",
+              "file": "odvecunit1.pdf",
+              "url": "https://drive.google.com/file/d/1LHDenWnM7Rw1dAYOPpzDJnaZS0LNjCsE/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 2",
+              "file": "Vector Calculus.pdf",
+              "url": "https://drive.google.com/file/d/1o_gzwBphWZoIyVHUw5AB_GHmfyU1vdcu/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 3",
+              "file": "ode u3_greeshma.pdf",
+              "url": "https://drive.google.com/file/d/1ZLBA130qN_RnNZ0BehfVHmCR78-GpUaM/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 4",
+              "file": "unit 4.pdf",
+              "url": "https://drive.google.com/file/d/1vjid_2yyW0vPY8j980NZN_NV1IUzf-cl/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 5",
+              "file": "unit 5 odevc.pdf",
+              "url": "https://drive.google.com/file/d/17AzzyCVeqx8Rz55bclUEfhvQg0r6K0KO/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25BS1PH102",
+          "name": "Advanced Engineering Physics",
+          "resources": [
+            {
+              "unit": "Unit 1",
+              "file": "LASER & Fiber optics-R22.pdf",
+              "url": "https://drive.google.com/file/d/1H1Xv3nyHpzK7MqW2UpUSGeC27g-PPP-r/view?usp=drivesdk",
+              "source_regulation": "R22"
+            },
+            {
+              "unit": "Unit 2",
+              "file": "Quantum Physics & Band theory.pdf",
+              "url": "https://drive.google.com/file/d/1g7Mv7osN6nqHc0gOzxI6ziO-hEfefsg/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 3",
+              "file": "UNIT-3.pdf",
+              "url": "https://drive.google.com/file/d/1BO6QrYHm43z3R5KljpP8SSce_FVP5CmB/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 4",
+              "file": "Semiconductor Devices.pdf",
+              "url": "https://drive.google.com/file/d/1Xz4WXOBqU_kWQDnkoonLdkIWGGgsHJ4r/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 5",
+              "file": "AP Unit-V (Energy/Nano Materials).pdf",
+              "url": "https://drive.google.com/file/d/16CHg3_yz35vTt0jm-5k6lqwWXlmRcfKN/view?usp=drivesdk"
+            },
+            {
+              "unit": "All Units",
+              "file": "AP UNIT 1-5.pdf",
+              "url": "https://drive.google.com/file/d/1SzHcx20BPpVaNEcc3sJCfRF8Y88jP_TY/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25HS1EN101",
+          "name": "English for Skill Enhancement",
+          "resources": [
+            {
+              "type": "Textbook",
+              "file": "ENG-TB1.pdf",
+              "url": "https://drive.google.com/file/d/1U1tmSl2-Qm8wwQXA-o5XyTolwo9i3OWK/view?usp=drivesdk"
+            },
+            {
+              "type": "Grammar",
+              "file": "Agreement, Conjunctions, Punctuation.pdf",
+              "url": "https://drive.google.com/file/d/1fx6sTahQMg8RAFDV5uVLQKMMj5Dnv19G/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25ES1EC101",
+          "name": "Electronic Devices and Circuits",
+          "resources": [
+            {
+              "type": "All Units",
+              "file": "EDC_R22_notes_aligned.pdf",
+              "url": "https://drive.google.com/file/d/1V_gcLjcpPYHfw7oRx_O93mAgjBBt8WCk/view?usp=drivesdk",
+              "source_regulation": "R22"
+            }
+          ]
+        },
+        {
+          "code": "25ES1IT102",
+          "name": "Data Structures",
+          "resources": [
+            {
+              "unit": "Unit 1",
+              "file": "unit 1 part1 Dsa.pdf",
+              "url": "https://drive.google.com/file/d/1Zj3R4VNl2fJhrmWsCpE0jv0D99yig0iG/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 2",
+              "file": "Asymptotic_Stack.pdf",
+              "url": "https://drive.google.com/file/d/1Kcz-fGpQUxt9tieyR8o1pIDWwSUVtjf2/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 3",
+              "file": "ds unit 3.pdf",
+              "url": "https://drive.google.com/file/d/1SsvpxD2BajYtIInC6tVApdbAH0_z__8/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 4",
+              "file": "ds unit 4.pdf",
+              "url": "https://drive.google.com/file/d/1S8qqDdgrqOk2P28NwU0cRZpslFwb18Ac/view?usp=drivesdk"
+            },
+            {
+              "unit": "Unit 5",
+              "file": "ds unit 5.pdf",
+              "url": "https://drive.google.com/file/d/1aNIdumLJRV3HE8Hmi2h_b6iguocZ-8tW/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25ES2CY101",
+          "name": "Python Programming Laboratory",
+          "resources": [
+            {
+              "file": "Python Programming Detailed PPT.pptx",
+              "url": "https://drive.google.com/file/d/1PB0Qc5_7pxE6VIuC-10miQqyCxULK35r/view?usp=drivesdk"
+            },
+            {
+              "file": "DICT, STRING AND FUNCT.pptx",
+              "url": "https://drive.google.com/file/d/1UOrZavublKu3BIem9azW7YOFNvQZ5pFo/view?usp=drivesdk"
+            },
+            {
+              "file": "Python exception, module, libraries.pptx",
+              "url": "https://drive.google.com/file/d/1_BjRlX8tFSJZfOWaKGO1A2T7K0oxDNrp/view?usp=drivesdk"
+            }
+          ]
+        },
+        {
+          "code": "25BS2PH102",
+          "name": "Advanced Engineering Physics Laboratory",
+          "resources": []
+        },
+        {
+          "code": "25ES2IT102",
+          "name": "Data Structures Laboratory",
+          "resources": []
+        },
+        {
+          "code": "25HS2EN101",
+          "name": "English Language and Communication Skills Laboratory",
+          "resources": []
+        },
+        {
+          "code": "25ES2ME101",
+          "name": "Engineering Workshop",
+          "resources": []
+        },
+        {
+          "code": "25MN6HS103",
+          "name": "Happiness and Wellbeing",
+          "resources": []
+        }
+      ]
+    },
+
+    "semester_3": {
+      "name": "Semester 3",
+      "subjects": [
+        {
+          "code": "25PC1CS201",
+          "name": "Object Oriented Programming Through JAVA",
+          "resources": [
+            {"unit": "Unit 1", "file": "JAVA UNIT - I.pdf", "url": "https://drive.google.com/file/d/14dNwnmOANAbjv35mnRZGFMZOF38DmtT8/view?usp=drivesdk"},
+            {"unit": "Unit 2", "file": "JAVA UNIT - II.pdf", "url": "https://drive.google.com/file/d/1o8IfFA38vj3iqq0aSpUXrh5cu6iE7dqz/view?usp=drivesdk"},
+            {"unit": "Unit 3", "file": "JAVA UNIT - III.pdf", "url": "https://drive.google.com/file/d/1xDRQiCb5sBX2yETvSZ8T7dS3oDQqPLAl/view?usp=drivesdk"},
+            {"unit": "Unit 4", "file": "JAVA UNIT - IV.pdf", "url": "https://drive.google.com/file/d/1GfdVOmXt2sp7NpsF7t2qsbF6ImuR2ufa/view?usp=drivesdk"},
+            {"unit": "Unit 5", "file": "JAVA UNIT - V.pdf", "url": "https://drive.google.com/file/d/1-FOBLrbXgu7EZIQbE2c0eT_l7G9FQ8qU/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1IT201",
+          "name": "Database Management Systems",
+          "resources": [
+            {"type": "Topic", "file": "triggers.doc", "url": "https://drive.google.com/file/d/1DpmaCopOcZf19Oj6nNDZKh9zM3HGCb0x/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1CS202",
+          "name": "Unified Software Engineering",
+          "resources": [
+            {"unit": "Unit 1", "file": "SE_LectureNotes_Unit-I.pdf", "url": "https://drive.google.com/file/d/1NgA646BB37GjNuSK5kDLUBZ05VbbEYYq/view?usp=drivesdk"},
+            {"unit": "Unit 2", "file": "SE Unit-2 Notes.docx", "url": "https://drive.google.com/file/d/1eHQHSy0afKWCihPLsQH02hHbSAgKaRFD/view?usp=drivesdk"},
+            {"unit": "Unit 3", "file": "SE UNIT-III(Part-1).pdf", "url": "https://drive.google.com/file/d/1GkNnHj6bS6Ia-MYugoBEx_7x1dQpqJO/view?usp=drivesdk"},
+            {"unit": "Unit 4", "file": "SE UNIT-IV.ppt", "url": "https://drive.google.com/file/d/13DZ3F7dqCeLy753NDd1_rK3GMDlivbOh/view?usp=drivesdk"},
+            {"unit": "Unit 5", "file": "Risk management-unit 5-cse.pptx", "url": "https://drive.google.com/file/d/1n2ZtFECeC4Vqjb56f-klxdsq0BeCQ3V5/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1IT208",
+          "name": "Computer Organization and Architecture",
+          "resources": [
+            {"unit": "Unit 3", "file": "UNIT-III-PART-I CO.pdf", "url": "https://drive.google.com/file/d/1emwQDtRizdSgmjnfRTwUAVCCWWGNjJiP/view?usp=drivesdk"},
+            {"unit": "Unit 4", "file": "unit 4 cache memory.pdf", "url": "https://drive.google.com/file/d/12yx3r5ZfiMRVM4tRqkCj6u8ySnM5b5wX/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1CS204",
+          "name": "Discrete Structures and Graph Theory",
+          "mapping_note": "MFCS resources from the supplied hub are mapped here; verify topic-by-topic against the R25 syllabus.",
+          "resources": [
+            {"unit": "Unit 1", "file": "mfcs1.pdf", "url": "https://drive.google.com/file/d/1lIlIztkzyL0yqJ47XSYSx70EsDFH6lXQ/view?usp=drivesdk"},
+            {"unit": "Unit 2", "file": "mfcs2.pdf", "url": "https://drive.google.com/file/d/1kFk-8e6rquMpcQROQjlezDlBBdsHkxkE/view?usp=drivesdk"},
+            {"unit": "Unit 3", "file": "Unit-3.pdf", "url": "https://drive.google.com/file/d/1n0xdQPrdr_uyNX2TtKvyl4kvbUoruqUQ/view?usp=drivesdk"},
+            {"unit": "Unit 4", "file": "Unit-4.pdf", "url": "https://drive.google.com/file/d/1c-JgQPaSpgvdE7DUUKnLy_lriwiXspEY/view?usp=drivesdk"},
+            {"unit": "Unit 5", "file": "Unit-5.pdf", "url": "https://drive.google.com/file/d/1A7kd0XIr0GlAp9VSfonEiySGJXfGhzTX/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25HS1MG201",
+          "name": "Innovation and Entrepreneurship",
+          "resources": []
+        },
+        {
+          "code": "25PC2CS201",
+          "name": "OOP Java Lab",
+          "resources": []
+        },
+        {
+          "code": "25PC2IT201",
+          "name": "DBMS Lab",
+          "resources": []
+        },
+        {
+          "code": "25PC2CS202",
+          "name": "Unified Software Engineering Lab",
+          "resources": []
+        },
+        {
+          "code": "25SD5CS201",
+          "name": "Data Visualization Lab",
+          "resources": []
+        },
+        {
+          "code": "25MN6HS102",
+          "name": "Environmental Science",
+          "resources": [
+            {
+              "type": "Mid 1",
+              "file": "R22 ES Mid-1 Notes.pdf",
+              "url": "https://drive.google.com/file/d/11TFC4shpmPLWYHn-iS7fExgjSsaqVSVm/view?usp=drivesdk",
+              "source_regulation": "R22"
+            },
+            {
+              "type": "Mid 2",
+              "file": "R22 ES Mid-2 Notes.pdf",
+              "url": "https://drive.google.com/file/d/1sjCHDocP1JNXCJhHPLRhSnAqDBrfwUpM/view?usp=drivesdk",
+              "source_regulation": "R22"
+            }
+          ]
+        }
+      ]
+    },
+
+    "semester_4": {
+      "name": "Semester 4",
+      "subjects": [
+        {
+          "code": "25BS1MT204",
+          "name": "Probability and Statistical Analysis",
+          "resources": [
+            {"unit": "Unit 1", "file": "UNIT-1.pdf", "url": "https://drive.google.com/file/d/17LhUKGBAv5Imz1EJz2WVjue6vvz2Zq5c/view?usp=drivesdk"},
+            {"unit": "Unit 2", "file": "SIMA-UNIT-2.pdf", "url": "https://drive.google.com/file/d/1BcFg3OigtA4iyW2klkH82uSzlNQ1AC5/view?usp=drivesdk"},
+            {"unit": "Units 3, 4, 5", "file": "Sima (3,4,5).pdf", "url": "https://drive.google.com/file/d/1zrtE2ZKDNztPIyeerKlP0id6-GOKHGTg/view?usp=drivesdk"},
+            {"unit": "Unit 5 alternative", "file": "5th unit sima.pdf", "url": "https://drive.google.com/file/d/1QAZlmQ6nYCa1aSKSs1lC2fBqI1DVYuhp/view?usp=drivesdk"},
+            {"type": "Full set", "file": "SIMA NOTES Vedasi.pdf", "url": "https://drive.google.com/file/d/17P4jwIjA5YVNiTSndPyxocXNNQwhirOC/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1CS203",
+          "name": "Artificial Intelligence Essentials",
+          "resources": []
+        },
+        {
+          "code": "25PC1IT204",
+          "name": "Operating Systems",
+          "resources": [
+            {"unit": "Unit 1", "file": "OS MATERIAL BY NP VNR.doc", "url": "https://drive.google.com/file/d/1ejPAaLaTXdsWsEVTSyQWaP5YwIkOEaYH/view?usp=drivesdk"},
+            {"unit": "Unit 2", "file": "Process Synchronization.pdf", "url": "https://drive.google.com/file/d/1iKbAKLK1AtcRQAo-AsMIWmuHLsElD2qz/view?usp=drivesdk"},
+            {"unit": "Unit 3", "file": "OS 3rd unit 2nd part.pdf", "url": "https://drive.google.com/file/d/1JjDkKkhE3I0Dcd4NHR4zYgU24dYLLkLO/view?usp=drivesdk"},
+            {"unit": "Unit 4", "file": "Memory management.docx", "url": "https://drive.google.com/file/d/1l6wsESF7ty9sAUhXGTPtw-VCtyQm_BrW/view?usp=drivesdk"},
+            {"unit": "Unit 5", "file": "Unit V_Protection.pdf", "url": "https://drive.google.com/file/d/1x9Zp9vci_V5YVzpR_bJMbuxrWWjS8Tr5/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1CS205",
+          "name": "Design and Analysis of Algorithms",
+          "resources": [
+            {"unit": "Unit 1", "file": "DAA-unit1 hand_written notes.pdf", "url": "https://drive.google.com/file/d/1-HMlpvRHASs-7bo0SgOSf0DFkWjsZrx/view?usp=drivesdk"},
+            {"unit": "Unit 2", "file": "DAA unit-2 Handwritten notes.pdf", "url": "https://drive.google.com/file/d/1x7V9B58brL9Onah3c6Yq7Uzq6SsW0yi2/view?usp=drivesdk"},
+            {"unit": "Unit 3", "file": "DAA_unit3_(1).pdf", "url": "https://drive.google.com/file/d/1JqStn1HJTfXdBt_N0ae_rM1vad66VRV8/view?usp=drivesdk"},
+            {"unit": "Unit 4", "file": "Unit-4 Backtracking.pdf", "url": "https://drive.google.com/file/d/1b0pttWmgYtHs51Ns8hK3HjCBS831mfTi/view?usp=drivesdk"},
+            {"unit": "Unit 5", "file": "DAA_UNIT_5.pdf", "url": "https://drive.google.com/file/d/19UHiEVX4ZhfFttnORTffnXxBFFlPD-He/view?usp=drivesdk"},
+            {"type": "All Units", "file": "DAA-Notes-for-all-UNITS.pdf", "url": "https://drive.google.com/file/d/1qE_amHDom5pWhQWyKXoajvStUzdxtMdP/view?usp=drivesdk"}
+          ]
+        },
+        {
+          "code": "25PC1CY201",
+          "name": "Computer Networks",
+          "resources": []
+        },
+        {
+          "code": "25PW4CS201",
+          "name": "Design Thinking",
+          "resources": []
+        },
+        {
+          "code": "25PC2CS203",
+          "name": "AI Essentials Lab",
+          "resources": []
+        },
+        {
+          "code": "25PC2IN212",
+          "name": "OS and CN Lab",
+          "resources": []
+        },
+        {
+          "code": "25BS2MT211",
+          "name": "Computational Mathematics Lab",
+          "resources": []
+        },
+        {
+          "code": "25SD5CS202",
+          "name": "Web Application Development",
+          "resources": []
+        },
+        {
+          "code": "25VA7HS201",
+          "name": "Ancient Wisdom",
+          "resources": []
+        }
+      ]
+    }
+  }
+}
