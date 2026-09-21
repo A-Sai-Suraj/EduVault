@@ -303,6 +303,8 @@ with st.sidebar:
     )
 
     configured_admin_password = os.environ.get("ADMIN_PASSWORD", "").strip()
+    if not configured_admin_password:
+        configured_admin_password = str(st.secrets.get("ADMIN_PASSWORD", "")).strip()
     if st.session_state.admin_authenticated:
         if st.button("🔒  Log out Admin", key="admin_logout"):
             st.session_state.admin_authenticated = False
@@ -312,7 +314,7 @@ with st.sidebar:
     else:
         with st.expander("🔐 Admin Login"):
             if not configured_admin_password:
-                st.warning("Admin login is not configured. Set the ADMIN_PASSWORD environment variable before starting Streamlit.")
+                st.warning("Admin login is not configured. Add ADMIN_PASSWORD to the deployment secrets or environment variables before starting Streamlit.")
             with st.form("admin_login_form"):
                 admin_password = st.text_input("Password", type="password")
                 if st.form_submit_button("Log in", type="primary"):
