@@ -10,6 +10,7 @@ import hmac
 import os
 
 import streamlit as st
+from streamlit.errors import StreamlitSecretNotFoundError
 from sqlite3 import IntegrityError
 from utils.database import (
     add_resource,
@@ -304,7 +305,10 @@ with st.sidebar:
 
     configured_admin_password = os.environ.get("ADMIN_PASSWORD", "").strip()
     if not configured_admin_password:
-        configured_admin_password = str(st.secrets.get("ADMIN_PASSWORD", "")).strip()
+        try:
+            configured_admin_password = str(st.secrets.get("ADMIN_PASSWORD", "")).strip()
+        except StreamlitSecretNotFoundError:
+            configured_admin_password = ""
     if st.session_state.admin_authenticated:
         if st.button("🔒  Log out Admin", key="admin_logout"):
             st.session_state.admin_authenticated = False
