@@ -1,5 +1,4 @@
 __pycache__/
 *.py[cod]
-academic_hub.db
 .env
 .streamlit/secrets.toml
