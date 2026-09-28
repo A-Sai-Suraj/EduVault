@@ -543,17 +543,20 @@ def page_resources():
         )
         return
 
-    syllabus_resources = [
-        resource
-        for resource in resources
+    syllabus_resources = []
+    unit_resources = []
+    for resource in resources:
         if any(
             "syllabus" in str(resource.get(field, "")).lower()
             for field in ("unit", "type", "file")
-        )
-    ]
-    resources = syllabus_resources + [
-        resource for resource in resources if resource not in syllabus_resources
-    ]
+        ):
+            syllabus_resources.append(resource)
+        else:
+            unit_resources.append(resource)
+
+    for resource in syllabus_resources:
+        render_resource_card(resource)
+    resources = unit_resources
 
     # Group resources: if any resource has a "unit" field, group by unit;
     # otherwise list them flat.
