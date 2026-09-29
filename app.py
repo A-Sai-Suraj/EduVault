@@ -556,8 +556,6 @@ def page_resources():
             )
             if "mid1" in labels or "mid2" in labels:
                 mid_resources.append(resource)
-        for resource in mid_resources:
-            render_resource_card(resource)
         resources = [resource for resource in resources if resource not in mid_resources]
 
     syllabus_resources = []
@@ -572,6 +570,8 @@ def page_resources():
             unit_resources.append(resource)
 
     for resource in syllabus_resources:
+        render_resource_card(resource)
+    for resource in mid_resources:
         render_resource_card(resource)
     resources = unit_resources
 
