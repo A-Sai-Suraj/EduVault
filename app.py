@@ -547,6 +547,19 @@ def page_resources():
         )
         return
 
+    if chosen_subject.get("code") == "25ES1EE101":
+        mid_resources = []
+        for resource in resources:
+            labels = "".join(
+                str(resource.get(field, "")).lower().replace(" ", "").replace("-", "")
+                for field in ("file", "type")
+            )
+            if "mid1" in labels or "mid2" in labels:
+                mid_resources.append(resource)
+        for resource in mid_resources:
+            render_resource_card(resource)
+        resources = [resource for resource in resources if resource not in mid_resources]
+
     syllabus_resources = []
     unit_resources = []
     for resource in resources:
