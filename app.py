@@ -547,8 +547,8 @@ def page_resources():
         )
         return
 
+    mid_resources = []
     if chosen_subject.get("code") == "25ES1EE101":
-        mid_resources = []
         for resource in resources:
             labels = "".join(
                 str(resource.get(field, "")).lower().replace(" ", "").replace("-", "")
