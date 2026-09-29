@@ -386,6 +386,8 @@ def render_resource_card(resource: dict) -> None:
     """Render a single resource as a styled card with Open & Download buttons."""
     file_name = resource.get("file", "Unnamed Resource")
     url = resource.get("url", "")
+    description = resource.get("description", "")
+    website = resource.get("website", "")
     badge = _get_badge_label(resource)
     download_url = make_download_url(url) if is_drive_url(url) else None
     regulation = resource.get("source_regulation", "R25")
@@ -396,6 +398,8 @@ def render_resource_card(resource: dict) -> None:
         <div class="resource-card">
             <span class="resource-badge">📄 {badge}</span>
             <div class="resource-filename">{file_name}</div>
+            {f'<div style="color:var(--hub-muted); font-size:0.88rem; margin-bottom:0.35rem;">{description}</div>' if description else ''}
+            {f'<div style="color:var(--hub-muted); font-size:0.78rem;">Website: {website}</div>' if website else ''}
             {warning}
         </div>
         """,

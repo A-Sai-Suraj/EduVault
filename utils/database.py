@@ -34,8 +34,13 @@ CREATE TABLE IF NOT EXISTS resources (
     type TEXT NOT NULL DEFAULT '',
     file_name TEXT NOT NULL,
     url TEXT NOT NULL,
+    description TEXT NOT NULL DEFAULT '',
+    website TEXT NOT NULL DEFAULT '',
     source_regulation TEXT NOT NULL DEFAULT 'R25',
     UNIQUE (subject_id, file_name, url)
+);
+CREATE TABLE IF NOT EXISTS imported_external_resources (
+    url TEXT PRIMARY KEY
 );
 """
 
@@ -53,8 +58,73 @@ def init_db(db_path: str | Path = DEFAULT_DB_PATH, json_path: str | Path = DEFAU
     first_run = not db_file.exists()
     with _connect(db_file) as connection:
         connection.executescript(SCHEMA)
+        _ensure_resource_metadata_columns(connection)
         if first_run:
             migrate_json_to_db(connection, json_path)
+        _seed_external_resources(connection, json_path)
+
+
+def _ensure_resource_metadata_columns(connection: sqlite3.Connection) -> None:
+    columns = {row[1] for row in connection.execute("PRAGMA table_info(resources)")}
+    for column in ("description", "website"):
+        if column not in columns:
+            connection.execute(
+                f"ALTER TABLE resources ADD COLUMN {column} TEXT NOT NULL DEFAULT ''"
+            )
+
+
+def _seed_external_resources(
+    connection: sqlite3.Connection,
+    json_path: str | Path,
+) -> None:
+    """Import JSON resources with website metadata once, without overwriting SQLite edits."""
+    with open(json_path, "r", encoding="utf-8") as source:
+        payload = json.load(source)
+
+    for semester_key, semester in payload.get("semesters", {}).items():
+        for subject in semester.get("subjects", []):
+            for resource in subject.get("resources", []):
+                website = resource.get("website", "").strip()
+                url = resource.get("url", "").strip()
+                if not website or not url:
+                    continue
+                if connection.execute(
+                    "SELECT 1 FROM imported_external_resources WHERE url = ?", (url,)
+                ).fetchone():
+                    continue
+
+                subject_row = connection.execute(
+                    """SELECT subjects.id FROM subjects
+                       JOIN semesters ON semesters.id = subjects.semester_id
+                       WHERE semesters.semester_key = ? AND subjects.code = ?""",
+                    (semester_key, subject.get("code", "")),
+                ).fetchone()
+                if subject_row is None:
+                    continue
+
+                if connection.execute(
+                    "SELECT 1 FROM resources WHERE subject_id = ? AND url = ?",
+                    (subject_row["id"], url),
+                ).fetchone() is None:
+                    connection.execute(
+                        """INSERT INTO resources
+                           (subject_id, unit, type, file_name, url, description, website,
+                            source_regulation)
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+                        (
+                            subject_row["id"],
+                            resource.get("unit", ""),
+                            resource.get("type", ""),
+                            resource.get("file", ""),
+                            url,
+                            resource.get("description", ""),
+                            website,
+                            resource.get("source_regulation", "R25"),
+                        ),
+                    )
+                connection.execute(
+                    "INSERT INTO imported_external_resources (url) VALUES (?)", (url,)
+                )
 
 
 def migrate_json_to_db(
@@ -95,14 +165,17 @@ def migrate_json_to_db(
                 for resource in subject.get("resources", []):
                     connection.execute(
                         """INSERT OR IGNORE INTO resources
-                           (subject_id, unit, type, file_name, url, source_regulation)
-                           VALUES (?, ?, ?, ?, ?, ?)""",
+                           (subject_id, unit, type, file_name, url, description, website,
+                            source_regulation)
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
                         (
                             subject_row["id"],
                             resource.get("unit", ""),
                             resource.get("type", ""),
                             resource.get("file", ""),
                             resource.get("url", ""),
+                            resource.get("description", ""),
+                            resource.get("website", ""),
                             resource.get("source_regulation", "R25"),
                         ),
                     )
@@ -158,7 +231,7 @@ def get_app_data(db_path: str | Path = DEFAULT_DB_PATH) -> dict[str, Any]:
             subjects = _rows(connection, "SELECT * FROM subjects WHERE semester_id = ? ORDER BY id", (semester["id"],))
             for subject in subjects:
                 subject["resources"] = [
-                    {"id": resource["id"], "unit": resource["unit"], "type": resource["type"], "file": resource["file_name"], "url": resource["url"], "source_regulation": resource["source_regulation"]}
+                    {"id": resource["id"], "unit": resource["unit"], "type": resource["type"], "file": resource["file_name"], "url": resource["url"], "description": resource["description"], "website": resource["website"], "source_regulation": resource["source_regulation"]}
                     for resource in _rows(connection, "SELECT * FROM resources WHERE subject_id = ? ORDER BY id", (subject["id"],))
                 ]
             data["semesters"][semester["semester_key"]] = {"name": semester["name"], "subjects": subjects}

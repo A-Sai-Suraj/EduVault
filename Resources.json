@@ -104,6 +104,13 @@
               "type": "Topic",
               "file": "pointers.pdf",
               "url": "https://drive.google.com/file/d/1-I_nz2nfT7Dn0zKrjni1WBsVkBxdCPNe/view?usp=drivesdk"
+            },
+            {
+              "type": "Tutorial / Learning Resource",
+              "file": "C Programming Language",
+              "description": "Complete C programming tutorials, concepts, examples, and learning material.",
+              "website": "GeeksforGeeks",
+              "url": "https://www.geeksforgeeks.org/c/c-programming-language/"
             }
           ]
         },
