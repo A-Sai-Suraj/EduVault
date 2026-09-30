@@ -10,6 +10,7 @@ import hmac
 import os
 
 import streamlit as st
+import streamlit.components.v1 as components
 from streamlit.errors import StreamlitSecretNotFoundError
 from sqlite3 import IntegrityError
 from utils.database import (
@@ -48,6 +49,23 @@ st.set_page_config(
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="expanded",
+)
+
+components.html(
+    """
+    <script>
+    const parentDocument = window.parent.document;
+    if (!parentDocument.querySelector('script[data-website-id="4c14b814-d3c2-4f3d-bea9-e6c5fb1d7266"]')) {
+        const umamiScript = parentDocument.createElement("script");
+        umamiScript.defer = true;
+        umamiScript.src = "https://cloud.umami.is/script.js";
+        umamiScript.dataset.websiteId = "4c14b814-d3c2-4f3d-bea9-e6c5fb1d7266";
+        parentDocument.head.appendChild(umamiScript);
+    }
+    </script>
+    """,
+    height=0,
+    scrolling=False,
 )
 
 # ──────────────────────────────────────────────────────────────────────────────
