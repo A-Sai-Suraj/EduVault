@@ -1,43 +1,72 @@
-# EduVault
+# 📚 EduVault
 
-## Run with Docker
+> A student-friendly academic resource hub for quickly finding semester-wise notes and study materials.
 
-Build the image from the project root:
+EduVault is a centralized academic resource platform designed to make study materials easier to find and access.
 
-```sh
-docker build -t my-streamlit-app .
-```
+Instead of searching through scattered links and messages, students can browse resources semester-wise and subject-wise from a single platform.
 
-Run it locally:
+---
 
-```sh
-docker run --rm -p 8501:8501 my-streamlit-app
-```
+## ✨ Features
 
-Open <http://localhost:8501>.
+- 📚 Semester-wise resource organization
+- 📖 Subject-wise study materials
+- 🔍 Search resources quickly
+- 📂 Unit-wise resource organization
+- 🔗 Easy access to study materials
+- 🔐 Admin panel for resource management
+- 📱 Student-friendly interface
+- 💾 SQLite-based data management
 
-`ADMIN_PASSWORD` is optional. Set it to enable the admin login; without it, the
-admin panel remains inaccessible. For local use, copy `.env.example` to `.env`,
-set the value there, and run `docker run --rm -p 8501:8501 --env-file .env
-my-streamlit-app`. Keep `.env` out of source control. Streamlit's local
-`.streamlit/secrets.toml` fallback remains supported outside the image.
+---
 
-## Cloud deployment
+## 🛠️ Tech Stack
 
-Deploy the root `Dockerfile` on Railway or Render; both provide `PORT` at
-runtime, which the container uses automatically. Set `ADMIN_PASSWORD` in the
-platform's environment/secrets settings if admin access is needed. Google Cloud
-Run provides `PORT` (normally `8080`) in the same way.
+| Technology | Purpose |
+|---|---|
+| 🐍 Python | Application logic |
+| 🎈 Streamlit | Web application framework |
+| 🗄️ SQLite | Data storage |
+| 📁 Google Drive | Resource storage |
+| 🔧 Git & GitHub | Version control |
+| ☁️ Render | Deployment |
+| 🐳 Docker | Optional containerized deployment |
 
-For Hugging Face Spaces, create a Docker Space and configure its exposed
-container port as `7860`; set `PORT=7860` in the Space variables. Store
-`ADMIN_PASSWORD` in Space secrets, not in this repository.
+---
 
-## SQLite persistence
-
-The image includes the populated `academic_hub.db`. Admin changes are written to
-SQLite inside the running container. Container-local writes may be lost when a
-platform replaces or restarts the container; configure persistent storage at
-`/app/academic_hub.db` where the platform supports it, or arrange backups before
-replacing instances. The app continues to use SQLite and does not require a
-separate database service.
+## 🏗️ How It Works
+                    ┌───────────────┐
+                    │    STUDENT    │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │    EDUVAULT   │
+                    │   Streamlit   │
+                    └───────┬───────┘
+                            │
+                 ┌──────────┴──────────┐
+                 │                     │
+                 ▼                     ▼
+             ┌────────┐           ┌────────┐
+             │ Search │           │ Browse │
+             └───┬────┘           └───┬────┘
+                 │                    │
+                 └─────────┬──────────┘
+                           ▼
+                     ┌───────────┐
+                     │ Semester  │
+                     └─────┬─────┘
+                           ▼
+                     ┌───────────┐
+                     │  Subject  │
+                     └─────┬─────┘
+                           ▼
+                     ┌───────────┐
+                     │ Resources │
+                     └─────┬─────┘
+                           ▼
+                     ┌───────────┐
+                     │   Access  │
+                     └───────────┘
